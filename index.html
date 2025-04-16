@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div id="registerSection" >
+      <div class="card p-4 shadow-lg border-0">
+        <h1 class="text-center p-3">Smart Register System</h1>
+        <input id="regName" type="text" class="form-control mb-3" placeholder="Enter your name" required >
+        <input id="regEmail" type="email" class="form-control mb-3" placeholder="Enter your email" required >
+        <input id="regPassword" type="password" class="form-control mb-3" placeholder="Enter your password" required >
+        <div id="regAlert" class="alert text-center text-danger d-none"></div>
+        <button class="signup btn w-100">Sign Up</button>
+        <p class="text-center mt-3 text-white">You have an account? <a href="#login" class="login text-decoration-none text-white">SignIn</a></p>
+      </div>
+    </div>
+
+
+    <div id="loginSection" class="d-none">
+      <div class="card p-4 shadow-lg border-0">
+        <h1 class="text-center p-3">Smart Login System</h1>
+        <input id="loginEmail" type="email" class="form-control mb-3" placeholder="Enter your email" >
+        <input id="loginPassword" type="password" class="form-control mb-3" placeholder="Enter your password" >
+        <div id="loginAlert" class="alert alert-danger d-none"></div>
+        <button class="signin btn w-100">Login</button>
+        <p class="text-center mt-3 text-white">Don’t have an account? <a href="#register" class="register text-decoration-none text-white">Sign Up</a></p>
+      </div>
+    </div>
+
+    <div id="homeSection" class="d-none text-center">
+      <h2 id="welcome" class="text-white"></h2>
+      <button id="logout" class="btn btn-danger mt-3">Logout</button>
+    </div>
+  </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

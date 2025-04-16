@@ -1,0 +1,20 @@
+body , .card{
+    background: #24353f;
+}
+h1, .btn {
+    color: #17a2b8;
+}
+.btn{
+    border-color: #17a2b8;
+}
+.btn:hover{
+    background-color: #17a2b8;
+    color: white;
+}
+input, textarea, input::placeholder {
+    background-color: transparent !important;
+    color: white !important;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
